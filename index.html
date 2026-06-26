@@ -105,6 +105,7 @@
   .proj h3{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3.6vw,38px);margin:10px 0 6px;line-height:1.08}
   .proj .stack{font-style:italic;color:var(--rust);font-size:14px;margin-bottom:18px}
   .proj p.desc{color:#43403a;font-size:15.5px}
+  .proj p.desc em{color:var(--rust);font-style:italic}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
   .chip{font-size:12.5px;font-weight:600;background:var(--cream);border:1px solid var(--line);color:var(--mute);padding:5px 12px;border-radius:999px}
   .pstats{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap}
@@ -218,7 +219,7 @@
         <div class="pmeta">Project 01</div>
         <h3>NYC Food Desert Analysis</h3>
         <div class="stack">Python · MongoDB · Folium · Google Places / USDA / Census APIs</div>
-        <p class="desc">The USDA's rural 1-mile threshold misclassifies dense urban neighborhoods — flagging zero deserts across the Bronx and Manhattan. I built a 6-source pipeline of 70,000+ records and a composite Food Access Score from 8 weighted variables, delivered as an interactive choropleth across all five boroughs.</p>
+        <p class="desc">The USDA's rural 1-mile threshold misclassifies dense urban neighborhoods — flagging zero deserts across the Bronx and Manhattan. I built a 6-source pipeline of 70,000+ records and a composite Food Access Score from 8 weighted variables, delivered as an interactive choropleth across all five boroughs. <em>Currently extending the methodology to 300+ neighborhoods and integrating food pantry and community garden data.</em></p>
         <div class="pstats">
           <div><b>7 + 13</b><span>deserts &amp; at-risk areas found</span></div>
           <div><b>59.8</b><span>point access spread</span></div>
@@ -266,18 +267,18 @@
     <!-- P4 -->
     <article class="proj reverse">
       <div class="pbody">
-        <div class="pmeta">Project 04</div>
-        <h3>School Food-Waste Database System</h3>
+        <div class="pmeta">Project 04 · Team of 5</div>
+        <h3>Food We Save — Food-Waste Database</h3>
         <div class="stack">SQL Server · T-SQL · Stored Procedures · Triggers · Views</div>
-        <p class="desc">A full relational system for a 25-school district, tracking the food lifecycle from budget allocation through leftover reporting. Five-table normalized schema with defensive AFTER triggers, parameterized stored procedures, covering indexes, and surplus-calculating reporting views.</p>
+        <p class="desc">U.S. schools discard roughly 3.9M tons of food a year. Our team designed a centralized relational database so districts can surface budget surpluses, schools can track waste, and food-insecurity organizations can pinpoint surplus meals. Five-table normalized schema with defensive AFTER triggers, a parameterized stored procedure, covering indexes, and surplus-calculating reporting views.</p>
         <div class="pstats">
           <div><b>5</b><span>tables, full integrity</span></div>
           <div><b>2</b><span>business-rule triggers</span></div>
-          <div><b>25</b><span>schools modeled</span></div>
+          <div><b>3.9M</b><span>tons of waste targeted</span></div>
         </div>
         <div class="chips"><span class="chip">Schema Design</span><span class="chip">Triggers</span><span class="chip">Stored Procedures</span><span class="chip">Reporting Views</span></div>
       </div>
-      <div class="pfig"><img src="assets/rankings.png" alt="NYC neighborhood food access score rankings chart"></div>
+      <div class="pfig"><img src="assets/database_er.png" alt="Entity-relationship diagram for the Food We Save school food-waste database"></div>
     </article>
   </div>
 </section>
@@ -310,9 +311,9 @@
     </div>
     <div class="about-grid">
       <div>
-        <p>I'm a <strong>Data Scientist and Analyst</strong> currently serving as Data Coordinator / Analyst at Manhattan Charter Schools while finishing an <strong>M.S. in Applied Data Science at Syracuse University</strong> (GPA 3.7).</p>
+        <p>I'm a <strong>Data Scientist and Analyst</strong> and a recent <strong>M.S. in Applied Data Science graduate from Syracuse University</strong> (GPA 3.7), currently serving as Data Coordinator / Analyst at Manhattan Charter Schools.</p>
         <p>My path runs from a B.S. in Chemistry through clinical informatics and public health analytics into database engineering and deep learning — a combination that lets me move comfortably between rigorous methods and messy, real-world domains.</p>
-        <p>I'm looking for mid-level <strong>Data Analyst, Data Scientist, or Analytics/ML Engineer</strong> roles where quantitative rigor meets real-world impact — particularly in public health, finance/insurance, or technology.</p>
+        <p>I'm looking for entry-level <strong>Data Analyst, Data Scientist, or Analytics/ML Engineer</strong> roles where quantitative rigor meets real-world impact — particularly in public health, finance/insurance, or technology.</p>
         <p style="color:var(--mute);font-size:14.5px"><strong style="color:var(--ink)">Relevant coursework —</strong> Machine Learning · Deep Learning · Data Warehousing · Database Administration · NLP · Applied Data Science · Social Web Analytics</p>
       </div>
       <div class="timeline">
@@ -353,7 +354,7 @@
       </a>
     </div>
     <div class="foot">
-      <span>© 2026 Philippe Louis · Brooklyn, NY</span>
+      <span>© 2026 Philippe Louis · NYC Metro Area</span>
       <span>Data Scientist · Data Analyst · ML Engineer</span>
     </div>
   </div>
